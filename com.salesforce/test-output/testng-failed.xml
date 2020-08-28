@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.salesforce.logintest.LoginTest">
+      <class name="com.salesforce.logintest.Login_WithConstructorTest">
         <methods>
-          <include name="loginTest"/>
           <include name="setUP"/>
-          <include name="destroy_setUp"/>
+          <include name="loginWithValidCredentialTest"/>
         </methods>
-      </class> <!-- com.salesforce.logintest.LoginTest -->
+      </class> <!-- com.salesforce.logintest.Login_WithConstructorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
