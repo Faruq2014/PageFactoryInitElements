@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="17176" started-at="2020-08-28T20:17:31Z" finished-at="2020-08-28T20:17:48Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="17176" started-at="2020-08-28T20:17:31Z" finished-at="2020-08-28T20:17:48Z">
+      <class name="com.salesforce.logintest.Login_WithConstructorTest">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:com.salesforce.logintest.Login_WithConstructorTest@62e136d3]" name="setUP" is-config="true" duration-ms="13962" started-at="2020-08-28T20:17:31Z" finished-at="2020-08-28T20:17:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="loginWithValidCredentialTest()[pri:1, instance:com.salesforce.logintest.Login_WithConstructorTest@62e136d3]" name="loginWithValidCredentialTest" duration-ms="1957" started-at="2020-08-28T20:17:45Z" finished-at="2020-08-28T20:17:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentialTest -->
+        <test-method status="PASS" signature="destroy_setUp()[pri:0, instance:com.salesforce.logintest.Login_WithConstructorTest@62e136d3]" name="destroy_setUp" is-config="true" duration-ms="1224" started-at="2020-08-28T20:17:47Z" finished-at="2020-08-28T20:17:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy_setUp -->
+      </class> <!-- com.salesforce.logintest.Login_WithConstructorTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
