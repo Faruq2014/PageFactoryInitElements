@@ -9,7 +9,7 @@ import org.openqa.selenium.support.How;
 	public class Login {
 	
 		
-	public  WebDriver driver;
+	//public  WebDriver driver; // no need for this driver object here 
 	
 	@FindBy(xpath="//img[@class='img-responsive']")
 	public WebElement login_Link;
