@@ -1,25 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15504" started-at="2020-09-01T16:57:06Z" finished-at="2020-09-01T16:57:22Z">
+  <suite name="Default suite" duration-ms="32037" started-at="2020-11-15T01:11:52Z" finished-at="2020-11-15T01:12:24Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="15504" started-at="2020-09-01T16:57:06Z" finished-at="2020-09-01T16:57:22Z">
-      <class name="com.salesforce.logintest.Login_WithConstructorTest">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:com.salesforce.logintest.Login_WithConstructorTest@3745e5c6]" name="setUP" is-config="true" duration-ms="11351" started-at="2020-09-01T16:57:06Z" finished-at="2020-09-01T16:57:17Z">
+    <test name="Default test" duration-ms="32037" started-at="2020-11-15T01:11:52Z" finished-at="2020-11-15T01:12:24Z">
+      <class name="com.salesforce.logintest.LoginTest">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:com.salesforce.logintest.LoginTest@31a5c39e]" name="setUP" is-config="true" duration-ms="21415" started-at="2020-11-15T01:11:52Z" finished-at="2020-11-15T01:12:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="loginWithValidCredentialTest()[pri:1, instance:com.salesforce.logintest.Login_WithConstructorTest@3745e5c6]" name="loginWithValidCredentialTest" duration-ms="3373" started-at="2020-09-01T16:57:17Z" finished-at="2020-09-01T16:57:21Z">
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.salesforce.logintest.LoginTest@31a5c39e]" name="loginTest" duration-ms="9375" started-at="2020-11-15T01:12:14Z" finished-at="2020-11-15T01:12:23Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//img[@class='img-responsive']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'DESKTOP-5HMC83B', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//img[@class='img-responsive']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'DESKTOP-5HMC83B', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:336)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.salesforce.login.Login.clickOnLoginLink(Login.java:22)
+at com.salesforce.logintest.LoginTest.loginTest(LoginTest.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithValidCredentialTest -->
-        <test-method status="PASS" signature="destroy_setUp()[pri:0, instance:com.salesforce.logintest.Login_WithConstructorTest@3745e5c6]" name="destroy_setUp" is-config="true" duration-ms="735" started-at="2020-09-01T16:57:21Z" finished-at="2020-09-01T16:57:22Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="destroy_setUp()[pri:0, instance:com.salesforce.logintest.LoginTest@31a5c39e]" name="destroy_setUp" is-config="true" duration-ms="1182" started-at="2020-11-15T01:12:23Z" finished-at="2020-11-15T01:12:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy_setUp -->
-      </class> <!-- com.salesforce.logintest.Login_WithConstructorTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.salesforce.logintest.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
